@@ -94,11 +94,12 @@
       <div class="colophon">
         <nav class="nav-colophon" aria-label="${_('About')}">
           <ol>
-              % for item_num, link in enumerate(footer['navigation_links'], start=1):
-              <li class="nav-colophon-0${item_num}">
-                <a id="${link['name']}" href="${link['url']}">${link['title']}</a>
-              </li>
-              % endfor
+              ## mcdaniel nov-2020: remove foot menu
+              ##% for item_num, link in enumerate(footer['navigation_links'], start=1):
+              ##<li class="nav-colophon-0${item_num}">
+              ##  <a id="${link['name']}" href="${link['url']}">${link['title']}</a>
+              ##</li>
+              ##% endfor
           </ol>
         </nav>
 
@@ -133,11 +134,12 @@
 
         <nav class="nav-legal" aria-label="${_('Legal')}">
           <ul>
-            % for item_num, link in enumerate(footer['legal_links'], start=1):
-              <li class="nav-legal-0${item_num}">
-                <a href="${link['url']}">${link['title']}</a>
-              </li>
-            % endfor
+            ## mcdaniel nov-2020: remove footer site links
+            ##% for item_num, link in enumerate(footer['legal_links'], start=1):
+            ##  <li class="nav-legal-0${item_num}">
+            ##    <a href="${link['url']}">${link['title']}</a>
+            ##  </li>
+            ##% endfor
             <li><a href="${footer['edx_org_link']['url']}">${footer['edx_org_link']['text']}</a></li>
           </ul>
         </nav>
