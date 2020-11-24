@@ -87,6 +87,9 @@ from pipeline_mako import render_require_js_path_overrides
   ##<link rel="icon" type="image/x-icon" href="${static.url(static.get_value('favicon_path', settings.FAVICON_PATH))}" />
   <link rel="icon" type="image/x-icon" href="https://cdn.greenmountainelearning.com/edx/edx-theme/images/green-mountain-learning.ico" />
 
+  <!-- McDaniel: oct-2018 Rover styling customizations -->
+  <link type="text/css" rel="stylesheet" href="${static.url('css/green-mountain-learning.css')}">
+
   <%static:css group='style-vendor'/>
   % if '/' in self.attr.main_css:
     % if get_language_bidi():
