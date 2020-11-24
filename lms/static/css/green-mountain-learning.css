@@ -5,6 +5,10 @@
   these are straggler style issues that could not be dealt with 
   using standard Bootstrap 4 variables.
 
+  Anything you change here requires recompiling static assets in order
+  for changes to take effect.
+
+  more: https://getbootstrap.com/docs/4.0/getting-started/theming/
 */
 
 .dashboard .main-container .my-courses .course .details .enter-course, 

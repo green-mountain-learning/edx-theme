@@ -17,11 +17,12 @@
         <div class="col-md-9">
           <nav class="navbar site-nav navbar-expand-sm" aria-label="${_('About')}">
             <ul class="navbar-nav">
-              % for item_num, link in enumerate(footer['navigation_links'], start=1):
-                <li class="nav-item">
-                  <a class="nav-link" href="${link['url']}">${link['title']}</a>
-                </li>
-              % endfor
+              ## mcdaniel nov-2020: remove footer site links
+              ##% for item_num, link in enumerate(footer['navigation_links'], start=1):
+              ##  <li class="nav-item">
+              ##    <a class="nav-link" href="${link['url']}">${link['title']}</a>
+              ##  </li>
+              ##% endfor
             </ul>
           </nav>
 
@@ -52,14 +53,15 @@
 
           <nav class="navbar legal-nav navbar-expand-sm" aria-label="${_('Legal')}">
             <ul class="navbar-nav">
-              % for item_num, link in enumerate(footer['legal_links'], start=1):
-                <li class="nav-item">
-                  <a class="nav-link" href="${link['url']}">${link['title']}</a>
-                </li>
-              % endfor
-              <li class="nav-item">
-                <a class="nav-link" href="${footer['edx_org_link']['url']}">${footer['edx_org_link']['text']}</a>
-              </li>
+              ## mcdaniel nov-2020: remove footer site links
+              ##% for item_num, link in enumerate(footer['legal_links'], start=1):
+              ##  <li class="nav-item">
+              ##    <a class="nav-link" href="${link['url']}">${link['title']}</a>
+              ##  </li>
+              ##% endfor
+              ##<li class="nav-item">
+              ##  <a class="nav-link" href="${footer['edx_org_link']['url']}">${footer['edx_org_link']['text']}</a>
+              ##</li>
             </ul>
           </nav>
         </div>
