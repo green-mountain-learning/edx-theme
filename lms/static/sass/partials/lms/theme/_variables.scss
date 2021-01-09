@@ -32,23 +32,32 @@
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     */
 
-// Theme colors
-//
-// Note: define colors needed by your theme first
-
 // Define the primary green colors
 $green-mountain-green-primary: #026b4a;
 
-// Make red the primary color
+// Set primary them color overrides
 $primary: $green-mountain-green-primary;
-$secondary: $green-mountain-green-primary;
-$light: $green-mountain-green-primary;
-$dark: $green-mountain-green-primary;
+$info: #54CD5B;
+
+// re-map from Blues to Purples
+$m-blue: $primary;
+$m-blue-l1: #19CE54;
+$m-blue-l2: #19CE54;
+$m-blue-l3: #54CD5B;
+$m-blue-l4: #DFEDE7;
+$m-blue-l5: #C5EDCA;
+$m-blue-l6: #DFEDE7;
+
+$m-blue-d1: #19CE54;
+$m-blue-d2: $primary;
+$m-blue-d3: #129472;
+$m-blue-d4: #025130;
+$m-blue-d5: #C5EDCA;
+$m-blue-d6: #129F7A;
+
 
 // Theme fonts
-$font-family-sans-serif: 'Lato',sans-serif;
-
-
+$font-family-sans-serif: 'Lato','Roboto','Helvetica Neue','Arial','sans-serif';
 
 
 @import 'edx-bootstrap/sass/open-edx/theme';
